@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -18,8 +22,9 @@ body {
 header {
     margin: auto;
     margin-top: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     /* background-color: #883030; */
+    
 }
 
 header img {
@@ -39,7 +44,6 @@ header ul li {
 .name a {
     text-decoration: none;
     color: #969696;
-
 }
 
 /* big */
@@ -47,8 +51,27 @@ header ul li {
 .big {
     margin: auto;
     margin-bottom: 20px;
-    height: 500px;
-    background-color: #7824a8;
+    background-image: url('file:///Users/matteomeneguzzi/Boolean%20/htmlcss-wp%20/img/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+
+}
+
+.big .big-text {
+    padding: 320px 555px 65px 50px;
+    background-color:  rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+.big .big-text div {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.big .big-text p {
+    font-weight: 300;
 }
 
 /* grid */
@@ -57,13 +80,15 @@ header ul li {
     margin: auto;
     margin-bottom: 10px;
     height: 700px;
-    background-color: #24a84c;
 }
 
 .grid header{
-    height: 100px;
-    background-color: rgb(39, 181, 216);
+    font-family: sans-serif;
+    font-size: 25px;
+}
 
+.grid header p{
+    font-size: 20px;
 }
 
 /* columns */
@@ -74,34 +99,59 @@ header ul li {
     display: table;
   }
 
-.grid .container.clearfix {
-    height: 580px;
-}
-
 aside.aside-left {
     float: left;
     margin-right: 2%;
-    height: 560px;
     width: 18%;
-    background-color: #000000;
-    
+}
+
+aside .image,
+.main-content .image {
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.left {
+    background-image: url('file:///Users/matteomeneguzzi/Boolean%20/htmlcss-wp%20/img/img-1.jpg');
+}
+
+.center {
+    background-image: url('file:///Users/matteomeneguzzi/Boolean%20/htmlcss-wp%20/img/img-2.jpg');
+}
+
+.right {
+    background-image: url('file:///Users/matteomeneguzzi/Boolean%20/htmlcss-wp%20/img/img-3.jpg');
+}
+
+.layer {
+    background-color:  rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    height: 205px;
 }
 
 .container .main-content{
     float: left;
     height: 560px;
     width: 60%;
-    background-color: #000000;
 }
 
 aside.aside-right {
     float: left;
     margin-left: 2%;
-    height: 560px;
     width: 18%;
-    background-color: #000000;
 }
 
+aside h4,
+.main-content h4 {
+   margin-bottom: 15px;
+}
+
+aside p,
+.main-content p {
+    color: #969696;
+}
 /* footer */
 
 footer {
